@@ -47,7 +47,7 @@ during those intervals.
     interv <- aggregate(steps ~ interval, data = data, mean)
     plot(interv$interval, interv$steps, type = "l", xlab = "Interval", ylab = "Steps", main = "Average number of steps by intervals")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-5-1.png)<!-- -->
+![plot of chunk unnamed-chunk-5-1](PA1_template_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
 **Which 5-minute interval, on average across all the days in the
 dataset, contains the maximum number of steps?**
@@ -95,7 +95,7 @@ NAs by drawing them side by side.
     hist(day$steps, main = "Without NAs",
          xlab = "Number of steps", col = "blue")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-9-1.png)<!-- -->
+![plot of chunk unnamed-chunk-9-1](PA1_template_files/figure-markdown_strict/unnamed-chunk-9-1.png)
 
 Doesn't see any difference. How about mean and median of the total
 number of steps taken per day?
@@ -141,7 +141,7 @@ average number of steps separately for weekdays and weekends.
     plot(weekDays, type = "l", main = "Weekdays", ylim = c(0,250), col = "blue")
     plot(weekEnds, type = "l", main = "Weekends", ylim = c(0,250), col = "red")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)<!-- -->
+![plot of chunk unnamed-chunk-12-1](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
 
 They definitely differs. We don't see such a big step spikes during
 weekends as we see for Weekdays, but overall the are more steps during
