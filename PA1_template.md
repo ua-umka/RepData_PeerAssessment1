@@ -6,7 +6,7 @@ Loading and preprocessing the data
 
 File
 [activity.zip](https://github.com/ua-umka/RepData_PeerAssessment1/blob/master/activity.zip?raw=true)
-are downloaded and uncompressed in a working directory. To uncompress
+is downloaded and uncompressed in a working directory. To uncompress
 the file *downloader package* is used.
 
     library("downloader")
