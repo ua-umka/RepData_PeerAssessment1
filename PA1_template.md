@@ -6,8 +6,7 @@ Loading and preprocessing the data
 
 File
 [activity.zip](https://github.com/ua-umka/RepData_PeerAssessment1/blob/master/activity.zip?raw=true)
-is downloaded and uncompressed in a working directory. To uncompress
-the file *downloader package* is used.
+is downloaded and uncompressed in a working directory. To uncompress the file, *downloader package* is used.
 
     library("downloader")
     if (!file.exists("activity.zip")) {
@@ -26,7 +25,7 @@ up steps for each day. The histogram below shows the result.
 
 ![plot of chunk unnamed-chunk-3-1](PA1_template_files/figure-markdown_strict/unnamed-chunk-3-1.png)
 
-What is mean and median total number of steps taken per day?
+What is the mean and the median total number of steps taken per day?
 ------------------------------------------------------------
 
     mean(day$steps)
@@ -49,8 +48,6 @@ during those intervals.
 
 ![plot of chunk unnamed-chunk-5-1](PA1_template_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
-**Which 5-minute interval, on average across all the days in the
-dataset, contains the maximum number of steps?**
 
 Imputing missing values
 -----------------------
@@ -97,7 +94,7 @@ NAs by drawing them side by side.
 
 ![plot of chunk unnamed-chunk-9-1](PA1_template_files/figure-markdown_strict/unnamed-chunk-9-1.png)
 
-Doesn't see any difference. How about mean and median of the total
+We don't observe any difference. What about the mean and median of the total
 number of steps taken per day?
 
     mean(dayWhNas$steps); median(dayWhNas$steps)
@@ -113,7 +110,7 @@ number of steps taken per day?
 
     ## [1] -1.188679
 
-So there is a slight change in median. The median of the data without
+So there is a slight change in the median. The median of the data without
 NAs is higher by 1.19 step per day.
 
 Are there differences in activity patterns between weekdays and weekends?
@@ -143,6 +140,6 @@ average number of steps separately for weekdays and weekends.
 
 ![plot of chunk unnamed-chunk-12-1](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
 
-They definitely differs. We don't see such a big step spikes during
+They definitely differ. We don't see such a big step spikes during
 weekends as we see for Weekdays, but overall the are more steps during
 weekends than weekdays.
